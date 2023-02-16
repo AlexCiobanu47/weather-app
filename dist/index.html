@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="icon" href="images/clouds.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src = 'main.js' defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <div class="info">
+                <img src="images/clouds.svg" alt="app-icon" id = 'app-icon'>
+                <p class = 'page-name'>Weather app</p>
+            </div>
+            <div id="mode-div">
+                <button id = 'mode-button'><img src="images/dark-mode.svg" alt="" id = 'mode-image'></button>
+            </div>
+            
+        </header>
+        <main>
+            <div class = 'content'>
+                <form id = 'search-form' novalidate>
+                    <label for= "location">Location:</label>
+                    <input type="text" name = 'location' id = 'location-input'>
+                    <button type = 'submit' id = 'submit-button'>Submit</button>
+                </form>
+                <div id = 'weather-result' class = 'inactive'>
+                    <div class = 'top-div'>
+                        <div id = 'city-name'>
+                            <p id = 'city-name'></p>
+                        </div>
+                        <div id="city-time">
+                            <p id="current-time"></p>
+                        </div>
+                    </div>
+                    <div class = 'middle-div'>
+                        <img src="" alt="weather-icon" id = 'weather-icon'>
+                        <p id = 'weather-text'></p>
+                    </div>
+                    <div class = 'bottom-div'>
+                        <div class = 'left-div'>
+                            <div class = 'wind-div'>
+                                <img src="images/wind-icon.svg" alt="wind-icon" id = 'wind-icon'>
+                                <p id = 'wind-speed'></p>
+                            </div>
+                            <div class="humidity-div">
+                                <img src="images/humidity-icon.svg" alt="humidity-icon" id = 'humidity-icon'>
+                                <p id = 'humidity'></p>
+                            </div>
+                        </div>
+                        <div class="right-div">
+                            <p id = 'temperature'></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">Created by Alex Ciobanu ©</p>
+            <a href=""><img class = 'github-icon' src="images/github-icon.svg" alt="githubicon"></a>
+        </footer>
+    </div>
+</body>
+</html>
