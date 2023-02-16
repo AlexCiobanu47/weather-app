@@ -185,3 +185,21 @@ footer{
         
     }
 }
+@media(max-width: 500px){
+    #weather-result{
+        width: 20rem;
+    }
+    #wind-speed, #humidity{
+        font-size: 1rem;
+    }
+    #wind-icon, #humidity-icon{
+        width: 10%;
+    }
+    .right-div{
+        margin: 0;
+    }
+    .bottom-div{
+        grid-template: 1fr 1fr/1fr;
+        
+    }
+}
